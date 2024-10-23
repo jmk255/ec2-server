@@ -1,8 +1,10 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const cors = require('cors');
 
 const port = 80;
+app.use(cors());
 require('dotenv').config()
 const mysql = require('mysql2');
 
